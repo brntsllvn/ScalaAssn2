@@ -9,6 +9,11 @@ class TestFSet extends mutable.Specification {
     s.size mustEqual 0
   }
 
+  "insert one int" >> {
+    val s = FSet().add(1)
+    s.size mustEqual 1
+  }
+
   "insert" >> {
     val s = FSet().add(1).add(2).add(1)
     (s.size mustEqual 2) and

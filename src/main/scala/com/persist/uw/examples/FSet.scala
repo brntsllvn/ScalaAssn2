@@ -1,6 +1,9 @@
 package com.persist.uw.examples
 
+import com.persist.uw.examples.FQueue.NonEmptyFQueue
+
 import scala.annotation.tailrec
+import scala.collection.immutable.HashMap
 
 // make it similar to FQueue
 // tests must pass
@@ -11,22 +14,33 @@ import scala.annotation.tailrec
 
 object FSet {
 
-  case class Cell(i: Int)
+  private case class NonEmptyFSet(existingSet: FSet) extends FSet
 
-  def apply(): FSet = new FSet {}
+  private case object EmptyFSet extends FSet
+
+  def apply(): FSet = EmptyFSet
 }
 
 sealed trait FSet {
 
   import FSet._
 
-  def size: Int = {
-    0
-  }
+//  def size: Int = {
+////    @tailrec
+//    def size1(nonEmptySet: NonEmptyFSet, accum: Int = 0): Int = {
+//      mySet match {
+//        case NonEmptyFSet(nonEmptySet.existingSet) => size1(NonEmptyFSet(nonEmptySet.existingSet.tail), accum + 1)
+//        case EmptyFSet => accum
+//      }
+//    }
+//    size1(this)
+//  }
+
+  def add(newInt: Int): FSet = NonEmptyFSet(newInt :: this)
+
+//  def insert(i: Int): FQueue = NonEmptyFQueue(i, this)
 
   def contains(i: Int): Boolean = ???
-
-  def add(i: Int): FSet = ???
 
   def delete(i: Int): FSet = ???
 
