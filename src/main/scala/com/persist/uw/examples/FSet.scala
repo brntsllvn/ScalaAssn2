@@ -11,14 +11,18 @@ import scala.annotation.tailrec
 
 object FSet {
 
-  ???
-    
-  def apply(): FSet = ???
+  case class Cell(i: Int)
+
+  def apply(): FSet = new FSet {}
 }
 
 sealed trait FSet {
 
   import FSet._
+
+  def size: Int = {
+    0
+  }
 
   def contains(i: Int): Boolean = ???
 
@@ -33,6 +37,4 @@ sealed trait FSet {
   def subset(set1: FSet): Boolean = ???
 
   def equals(set1: FSet): Boolean = ???
-
-  def size: Int = ???
 }
