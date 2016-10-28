@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="648f24d6-e0ee-4cb6-981c-5534cbff9d5d" name="Default" comment="" />
+    <list default="true" id="648f24d6-e0ee-4cb6-981c-5534cbff9d5d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/assign2.iml" afterPath="$PROJECT_DIR$/.idea/modules/assign2.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/com/persist/uw/examples/FSet.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/persist/uw/examples/FSet.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/com/persist/uw/examples/TestFSet.scala" afterPath="$PROJECT_DIR$/src/test/scala/com/persist/uw/examples/TestFSet.scala" />
+    </list>
     <ignored path="assign2.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,8 +36,8 @@
       <file leaf-file-name="TestFSet.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/com/persist/uw/examples/TestFSet.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            <state relative-caret-position="273">
+              <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -41,8 +46,8 @@
       <file leaf-file-name="FSet.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/persist/uw/examples/FSet.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-252">
-              <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+            <state relative-caret-position="282">
+              <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
               <folding>
                 <element signature="e#33#85#0" expanded="true" />
               </folding>
@@ -53,8 +58,8 @@
       <file leaf-file-name="FQueue.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/persist/uw/examples/FQueue.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="54" />
+            <state relative-caret-position="93">
+              <caret line="29" column="11" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -68,6 +73,9 @@
         <option value="Package Object" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -99,7 +107,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -112,19 +120,12 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Specs2.com.persist.uw.examples.TestFSet::insert one int">
+  <component name="RunManager" selected="Specs2.TestFSet">
     <configuration default="false" name="TestFSet" type="Specs2RunConfiguration" factoryName="Specs2" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="assign2" />
@@ -466,14 +467,14 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Specs2.com.persist.uw.examples.TestFSet::insert one int" />
+        <item index="0" class="java.lang.String" itemvalue="Specs2.TestFSet" />
         <item index="1" class="java.lang.String" itemvalue="Specs2.com.persist.uw.examples.TestFSet::init" />
-        <item index="2" class="java.lang.String" itemvalue="Specs2.TestFSet" />
+        <item index="2" class="java.lang.String" itemvalue="Specs2.com.persist.uw.examples.TestFSet::insert one int" />
       </list>
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1477529898976" />
+    <option name="lastUpdateTimestamp" value="1477577782529" />
     <option name="availableProjects">
       <map>
         <entry>
@@ -522,35 +523,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestFSet - 2016.10.26 at 18h 00m 15s.xml">
+    <history-entry file="TestFSet - 2016.10.27 at 16h 48m 39s.xml">
       <configuration name="TestFSet" configurationId="Specs2RunConfiguration" />
     </history-entry>
-    <history-entry file="TestFSet - 2016.10.26 at 18h 11m 39s.xml">
+    <history-entry file="TestFSet - 2016.10.27 at 16h 49m 05s.xml">
       <configuration name="TestFSet" configurationId="Specs2RunConfiguration" />
     </history-entry>
-    <history-entry file="TestFSet - 2016.10.26 at 20h 15m 36s.xml">
+    <history-entry file="TestFSet - 2016.10.27 at 16h 57m 08s.xml">
       <configuration name="TestFSet" configurationId="Specs2RunConfiguration" />
     </history-entry>
-    <history-entry file="com_persist_uw_examples_TestFSet__init - 2016.10.26 at 20h 21m 54s.xml">
-      <configuration name="com.persist.uw.examples.TestFSet::init" configurationId="Specs2RunConfiguration" />
+    <history-entry file="TestFSet - 2016.10.27 at 16h 58m 01s.xml">
+      <configuration name="TestFSet" configurationId="Specs2RunConfiguration" />
     </history-entry>
-    <history-entry file="com_persist_uw_examples_TestFSet__init - 2016.10.26 at 20h 23m 03s.xml">
-      <configuration name="com.persist.uw.examples.TestFSet::init" configurationId="Specs2RunConfiguration" />
+    <history-entry file="TestFSet - 2016.10.27 at 17h 08m 43s.xml">
+      <configuration name="TestFSet" configurationId="Specs2RunConfiguration" />
     </history-entry>
-    <history-entry file="com_persist_uw_examples_TestFSet__init - 2016.10.26 at 20h 35m 48s.xml">
-      <configuration name="com.persist.uw.examples.TestFSet::init" configurationId="Specs2RunConfiguration" />
+    <history-entry file="TestFSet - 2016.10.27 at 17h 09m 52s.xml">
+      <configuration name="TestFSet" configurationId="Specs2RunConfiguration" />
     </history-entry>
-    <history-entry file="com_persist_uw_examples_TestFSet__init - 2016.10.26 at 20h 36m 36s.xml">
-      <configuration name="com.persist.uw.examples.TestFSet::init" configurationId="Specs2RunConfiguration" />
+    <history-entry file="TestFSet - 2016.10.27 at 17h 10m 28s.xml">
+      <configuration name="TestFSet" configurationId="Specs2RunConfiguration" />
     </history-entry>
-    <history-entry file="com_persist_uw_examples_TestFSet__init - 2016.10.26 at 20h 58m 40s.xml">
-      <configuration name="com.persist.uw.examples.TestFSet::init" configurationId="Specs2RunConfiguration" />
+    <history-entry file="TestFSet - 2016.10.27 at 17h 11m 16s.xml">
+      <configuration name="TestFSet" configurationId="Specs2RunConfiguration" />
     </history-entry>
-    <history-entry file="com_persist_uw_examples_TestFSet__init - 2016.10.26 at 22h 03m 28s.xml">
-      <configuration name="com.persist.uw.examples.TestFSet::init" configurationId="Specs2RunConfiguration" />
+    <history-entry file="TestFSet - 2016.10.27 at 17h 16m 03s.xml">
+      <configuration name="TestFSet" configurationId="Specs2RunConfiguration" />
     </history-entry>
-    <history-entry file="com_persist_uw_examples_TestFSet__insert_one_int - 2016.10.26 at 22h 05m 32s.xml">
-      <configuration name="com.persist.uw.examples.TestFSet::insert one int" configurationId="Specs2RunConfiguration" />
+    <history-entry file="TestFSet - 2016.10.27 at 17h 19m 51s.xml">
+      <configuration name="TestFSet" configurationId="Specs2RunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -559,13 +560,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298193" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298193" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298193" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -626,13 +627,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/test/scala/com/persist/uw/examples/TestFSet.scala</url>
-          <line>13</line>
-          <properties />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="1" />
     </breakpoint-manager>
     <watches-manager />
@@ -642,7 +636,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/persist/uw/examples/SQueue.scala">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/com/persist/uw/examples/TestFSet.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -654,31 +648,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.8-sources.jar!/scala/Predef.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3240">
-          <caret line="229" column="0" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/persist/uw/examples/package.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/persist/uw/examples/SQueue.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/persist/uw/examples/package.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/persist/uw/examples/CQueue.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
           <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -686,30 +670,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.8-sources.jar!/scala/Predef.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="229" column="0" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/com/persist/uw/examples/TestFSet.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        <state relative-caret-position="273">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/persist/uw/examples/FQueue.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="54" />
+        <state relative-caret-position="93">
+          <caret line="29" column="11" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/persist/uw/examples/FSet.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+        <state relative-caret-position="282">
+          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
           <folding>
             <element signature="e#33#85#0" expanded="true" />
           </folding>
