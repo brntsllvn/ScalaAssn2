@@ -81,13 +81,49 @@ class TestFSet extends mutable.Specification {
       (sot.contains(12) mustEqual true)
   }
 
-//  "equals" >> {
-//    val s1 = FSet().add(1).add(2)
-//    val s2 = FSet().add(2).add(1).add(2)
-//    val s3 = FSet().add(1).add(2).add(3)
-//    (s1.equals(s2) mustEqual true) and
-//      (s1.equals(s3) mustEqual false)
-//  }
+  "single element in sets" >> {
+    val s1 = FSet().add(1)
+    val s2 = FSet().add(1)
+    val doTheyEqual = s1.equals(s2)
+    doTheyEqual mustEqual true
+  }
+
+  "single element in sets not equal" >> {
+    val s1 = FSet().add(1)
+    val s2 = FSet().add(2)
+    val doTheyEqual = s1.equals(s2)
+    doTheyEqual mustEqual false
+  }
+
+  "unequal set sizes do not equal" >> {
+    val s1 = FSet().add(1)
+    val s2 = FSet().add(2).add(3).add(4)
+    val doTheyEqual = s1.equals(s2)
+    doTheyEqual mustEqual false
+  }
+
+  "equals" >> {
+    val s1 = FSet().add(1).add(2)
+    val s2 = FSet().add(2).add(1).add(2)
+    val s3 = FSet().add(1).add(2).add(3)
+    val s1Eqs2 = s1.equals(s2)
+    (s1Eqs2 mustEqual true) and
+      (s1.equals(s3) mustEqual false)
+  }
+
+  "equals with several elements" >> {
+    val s1 = FSet().add(1).add(2).add(3)
+    val s2 = FSet().add(2).add(1).add(3)
+    s1.equals(s2) mustEqual true
+  }
+
+  "unequal with several elements" >> {
+    val s1 = FSet().add(3).add(2).add(1)
+    val s2 = FSet().add(4).add(2).add(1)
+    val eql = s1.equals(s2)
+    eql mustEqual false
+  }
+
 //
 //  "subset" >> {
 //    val s1 = FSet().add(1).add(2)
