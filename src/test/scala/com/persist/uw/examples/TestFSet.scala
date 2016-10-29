@@ -35,11 +35,6 @@ class TestFSet extends mutable.Specification {
     doesMySetContainThisNumber mustEqual true
   }
 
-  "reverse nothing" >> {
-    val s = FSet()
-    val s_reverse = s.reverse(s)
-  }
-
   "insert" >> {
     val s = FSet().add(1).add(2).add(1)
     (s.size mustEqual 2) and
@@ -59,6 +54,14 @@ class TestFSet extends mutable.Specification {
       (mySet.contains(1) mustEqual false)
   }
 
+  "delete second element" >> {
+    val s = FSet().add(1).add(2)
+    val sot = s.delete(1)
+    (sot.size mustEqual 1) and
+      (sot.contains(1) mustEqual false) and
+      (sot.contains(2) mustEqual true)
+  }
+
   "delete" >> {
     val s = FSet().add(1).add(2).delete(1)
     val s0 = s.delete(2)
@@ -67,7 +70,17 @@ class TestFSet extends mutable.Specification {
       (s.contains(2) mustEqual true) and
       (s0.size mustEqual 0)
   }
-//
+
+  "delete element buried inside" >> {
+    val s = FSet().add(1).add(2).add(42).add(12)
+    val sot = s.delete(42)
+    (sot.size mustEqual 3) and
+      (sot.contains(42) mustEqual false) and
+      (sot.contains(1) mustEqual true) and
+      (sot.contains(2) mustEqual true) and
+      (sot.contains(12) mustEqual true)
+  }
+
 //  "equals" >> {
 //    val s1 = FSet().add(1).add(2)
 //    val s2 = FSet().add(2).add(1).add(2)

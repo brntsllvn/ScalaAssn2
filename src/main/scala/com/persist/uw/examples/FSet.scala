@@ -59,37 +59,17 @@ sealed trait FSet {
     contains1(this)
   }
 
-//  private def reverse(items: FSet): FSet = {
-////    @tailrec
-//    def reverse1(items: FSet, accum: FSet = EmptyFSet): FSet = {
-//      items match {
-////        case NonEmptyFSet(i, next) => reverse1(next, NonEmptyFSet(i, accum))
-//        case EmptyFSet => accum
-//      }
-//    }
-//    reverse1(items)
-//  }
-
-  def reverse(myFSet: FSet): FSet = {
-        def reverse1(items: FSet, accum: FSet = EmptyFSet): FSet = {
-          items match{
-            case EmptyFSet => accum
-          }
-        }
-    reverse1(this)
-  }
-
   def delete(intToDelete: Int): FSet = {
-//    @tailrec
-    def delete1(myFSet: FSet): FSet = {
+    @tailrec
+    def delete1(myFSet: FSet, accum: FSet = EmptyFSet): FSet = {
       myFSet match {
-        case EmptyFSet => EmptyFSet
+        case EmptyFSet => accum
         case NonEmptyFSet(leadInt, EmptyFSet) =>
-          if(intToDelete == leadInt) EmptyFSet
-          else NonEmptyFSet(leadInt, EmptyFSet)
+          if(intToDelete == leadInt) delete1(EmptyFSet, accum)
+          else delete1(EmptyFSet, accum.add(leadInt))
         case NonEmptyFSet(leadInt, NonEmptyFSet(someInt, anotherFSet)) =>
-          if(this.contains(intToDelete)) NonEmptyFSet(intToDelete, this)
-          else this
+          if(intToDelete == leadInt) delete1(NonEmptyFSet(someInt, anotherFSet), accum)
+          else delete1(NonEmptyFSet(someInt, anotherFSet), accum.add(leadInt))
       }
     }
     delete1(this)
