@@ -14,9 +14,9 @@ import scala.collection.immutable.HashMap
 
 object FSet {
 
-  case class NonEmptyFSet(leadInt: Int, existingSet: FSet) extends FSet
+  case class NonEmptyFSet(val leadInt: Int, val existingSet: FSet) extends FSet
 
-  private case object EmptyFSet extends FSet
+  case object EmptyFSet extends FSet
 
   def apply(): FSet = EmptyFSet
 }
@@ -36,7 +36,17 @@ sealed trait FSet {
     size1(this)
   }
 
-  def add(newInt: Int): FSet = NonEmptyFSet(newInt, this)
+  def add(newInt: Int): FSet = {
+    def add1(myFSet: FSet): FSet = {
+      myFSet match {
+        case EmptyFSet => NonEmptyFSet(newInt, EmptyFSet)
+        case NonEmptyFSet(someInt, _) =>
+          if(this.contains(newInt)) this
+          else NonEmptyFSet(newInt, this)
+      }
+    }
+    add1(this)
+  }
 
   def contains(searchTerm: Int): Boolean = {
     @tailrec
@@ -49,14 +59,37 @@ sealed trait FSet {
     contains1(this)
   }
 
+//  private def reverse(items: FSet): FSet = {
+////    @tailrec
+//    def reverse1(items: FSet, accum: FSet = EmptyFSet): FSet = {
+//      items match {
+////        case NonEmptyFSet(i, next) => reverse1(next, NonEmptyFSet(i, accum))
+//        case EmptyFSet => accum
+//      }
+//    }
+//    reverse1(items)
+//  }
+
+  def reverse(myFSet: FSet): FSet = {
+        def reverse1(items: FSet, accum: FSet = EmptyFSet): FSet = {
+          items match{
+            case EmptyFSet => accum
+          }
+        }
+    reverse1(this)
+  }
+
   def delete(intToDelete: Int): FSet = {
-    @tailrec
+//    @tailrec
     def delete1(myFSet: FSet): FSet = {
       myFSet match {
-        case NonEmptyFSet(leadInt, next) =>
-//          if(intToDelete == leadInt) NonEmptyFSet(next.leadInt, next)
-//          else delete1(next)
         case EmptyFSet => EmptyFSet
+        case NonEmptyFSet(leadInt, EmptyFSet) =>
+          if(intToDelete == leadInt) EmptyFSet
+          else NonEmptyFSet(leadInt, EmptyFSet)
+        case NonEmptyFSet(leadInt, NonEmptyFSet(someInt, anotherFSet)) =>
+          if(this.contains(intToDelete)) NonEmptyFSet(intToDelete, this)
+          else this
       }
     }
     delete1(this)

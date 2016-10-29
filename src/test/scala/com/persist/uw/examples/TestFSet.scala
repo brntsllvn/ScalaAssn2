@@ -1,10 +1,10 @@
 package com.persist.uw.examples
 
+import com.persist.uw.examples.FSet.EmptyFSet
 import org.specs2._
 
 class TestFSet extends mutable.Specification {
 
-  //  empty FSet
   "init" >> {
     val s = FSet()
     s.size mustEqual 0
@@ -35,9 +35,14 @@ class TestFSet extends mutable.Specification {
     doesMySetContainThisNumber mustEqual true
   }
 
+  "reverse nothing" >> {
+    val s = FSet()
+    val s_reverse = s.reverse(s)
+  }
+
   "insert" >> {
     val s = FSet().add(1).add(2).add(1)
-    (s.size mustEqual 3) and
+    (s.size mustEqual 2) and
       (s.contains(1) mustEqual true) and
       (s.contains(2) mustEqual true) and
       (s.contains(0) mustEqual false)
@@ -53,15 +58,15 @@ class TestFSet extends mutable.Specification {
     (mySet.size mustEqual 0) and
       (mySet.contains(1) mustEqual false)
   }
-//
-//  "delete" >> {
-//    val s = FSet().add(1).add(2).delete(1)
-//    val s0 = s.delete(2)
-//    (s.size mustEqual 1) and
-//      (s.contains(1) mustEqual false) and
-//      (s.contains(2) mustEqual true) and
-//      (s0.size mustEqual 0)
-//  }
+
+  "delete" >> {
+    val s = FSet().add(1).add(2).delete(1)
+    val s0 = s.delete(2)
+    (s.size mustEqual 1) and
+      (s.contains(1) mustEqual false) and
+      (s.contains(2) mustEqual true) and
+      (s0.size mustEqual 0)
+  }
 //
 //  "equals" >> {
 //    val s1 = FSet().add(1).add(2)
