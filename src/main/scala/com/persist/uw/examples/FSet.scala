@@ -99,10 +99,22 @@ sealed trait FSet {
     comparisonSetContainsThisSet(this) && thisSetContainsComparisonSet(this)
   }
 
+  def subset(comparisonSet: FSet): Boolean = {
+    @tailrec
+    def isSubsetOf(thisSet: FSet): Boolean = {
+      val setsTogether = (thisSet, comparisonSet)
+      setsTogether match {
+        case (EmptyFSet,NonEmptyFSet(someInt, next)) => true
+        case (NonEmptyFSet(thisSetLeadInt,next), NonEmptyFSet(_,_)) =>
+          if(!comparisonSet.contains(thisSetLeadInt)) false
+          else isSubsetOf(next)
+      }
+    }
+    isSubsetOf(this)
+  }
+
   def union(set1: FSet): FSet = ???
 
   def intersect(set1: FSet): FSet = ???
-
-  def subset(set1: FSet): Boolean = ???
 
 }

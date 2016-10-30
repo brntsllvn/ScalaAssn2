@@ -124,14 +124,38 @@ class TestFSet extends mutable.Specification {
     eql mustEqual false
   }
 
-//
-//  "subset" >> {
-//    val s1 = FSet().add(1).add(2)
-//    val s2 = s1.add(3)
-//    (s1.subset(s1) mustEqual true) and
-//      (s1.subset(s2) mustEqual true) and
-//      (s2.subset(s1) mustEqual false)
-//  }
+  "set is subset of itself" >> {
+    val s1 = FSet().add(1)
+    val isSubset = s1.subset(s1)
+    isSubset mustEqual true
+  }
+
+  "set is not subset" >> {
+    val s1 = FSet().add(1)
+    val s2 = FSet().add(2)
+    s1.subset(s2) mustEqual false
+  }
+
+  "empty set is subset of every set" >> {
+    val s1 = FSet().add(1)
+    val isSubset = EmptyFSet.subset(s1)
+    isSubset mustEqual true
+  }
+
+  "subset test3" >> {
+    val s1 = FSet().add(1)
+    val s2 = FSet().add(1)
+    val isSubset = s1.subset(s2)
+    isSubset mustEqual true
+  }
+
+  "subset" >> {
+    val s1 = FSet().add(1).add(2)
+    val s2 = s1.add(3)
+    (s1.subset(s1) mustEqual true) and
+      (s1.subset(s2) mustEqual true) and
+      (s2.subset(s1) mustEqual false)
+  }
 //
 //  "intersect" >> {
 //    val s1 = FSet().add(1).add(2).add(3)
