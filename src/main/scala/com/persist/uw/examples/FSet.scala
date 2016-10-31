@@ -61,44 +61,19 @@ sealed trait FSet {
 
   def delete(intToDelete: Int): FSet = {
     @tailrec
-    def delete1(myFSet: FSet, accum: FSet = EmptyFSet): FSet = {
-      myFSet match {
+    def delete1(mySet: FSet, accum: FSet = EmptyFSet): FSet = {
+      mySet match {
         case EmptyFSet => accum
-        case NonEmptyFSet(leadInt, EmptyFSet) =>
-          if(intToDelete == leadInt) delete1(EmptyFSet, accum)
-          else delete1(EmptyFSet, accum.add(leadInt))
-        case NonEmptyFSet(leadInt, NonEmptyFSet(someInt, anotherFSet)) =>
-          if(intToDelete == leadInt) delete1(NonEmptyFSet(someInt, anotherFSet), accum)
-          else delete1(NonEmptyFSet(someInt, anotherFSet), accum.add(leadInt))
+        case NonEmptyFSet(leadInt, next) =>
+          if(intToDelete == leadInt) delete1(next, accum)
+          else delete1(next, accum.add(leadInt))
       }
     }
     delete1(this)
   }
 
   def equals(comparisonSet: FSet): Boolean = {
-    @tailrec
-    def comparisonSetContainsThisSet(thisSet: FSet): Boolean = {
-      val setsTogether = (thisSet, comparisonSet)
-      setsTogether match {
-        case (EmptyFSet,EmptyFSet) => true
-        case (EmptyFSet,NonEmptyFSet(someInt, next)) => true
-        case (NonEmptyFSet(thisSetLeadInt,next), NonEmptyFSet(_,_)) =>
-          if(!comparisonSet.contains(thisSetLeadInt)) false
-          else comparisonSetContainsThisSet(next)
-      }
-    }
-    def thisSetContainsComparisonSet(thisSet: FSet): Boolean = {
-      val setsTogether = (thisSet, comparisonSet)
-      setsTogether match {
-        case (EmptyFSet,EmptyFSet) => true
-        case (NonEmptyFSet(someInt, next),EmptyFSet) => true
-        case (NonEmptyFSet(_,_),NonEmptyFSet(comparisonSetLeadInt,next)) =>
-          if(!this.contains(comparisonSetLeadInt)) false
-          else comparisonSetContainsThisSet(next)
-      }
-    }
-
-    comparisonSetContainsThisSet(this) && thisSetContainsComparisonSet(this)
+    this.subset(comparisonSet) && comparisonSet.subset(this)
   }
 
   def subset(comparisonSet: FSet): Boolean = {
@@ -115,30 +90,27 @@ sealed trait FSet {
     isSubsetOf(this)
   }
 
-  def intersect(anotherSet: FSet): FSet = { // thisSet.intersect(anotherSet)
+  def intersect(anotherSet: FSet): FSet = {
     @tailrec
-    def intersectedWith(thisSet: FSet, accum: FSet = EmptyFSet): FSet = { // intersectedWith(this, ...)
-      val setsTogether = (anotherSet, thisSet)
-      setsTogether match {
-        case (NonEmptyFSet(thisLeadInt, thisNext), EmptyFSet) => accum
-        case (NonEmptyFSet(thisLeadInt, thisNext), NonEmptyFSet(anotherLeadInt, anotherNext)) =>
-          if (anotherSet.contains(anotherLeadInt)) intersectedWith(anotherNext, accum.add(anotherLeadInt))
-          else intersectedWith(anotherNext, accum)
+    def intersectWith(anotherSet: FSet, accum: FSet): FSet = {
+      anotherSet match {
+        case EmptyFSet => accum
+        case NonEmptyFSet(leadInt, next) =>
+          if (this.contains(leadInt)) intersectWith(next, accum.add(leadInt))
+          else intersectWith(next, accum)
       }
     }
-    intersectedWith(this, EmptyFSet)
+    intersectWith(anotherSet, EmptyFSet)
   }
 
   def union(anotherSet: FSet): FSet = {
-      def anotherSetUnionWith(anotherSet: FSet, accum: FSet = this): FSet = {
+    @tailrec
+      def anotherSetUnionWith(anotherSet: FSet, accum: FSet): FSet = {
         anotherSet match {
           case EmptyFSet => accum
           case NonEmptyFSet(leadInt, next) => anotherSetUnionWith(next, accum.add(leadInt))
         }
       }
-    anotherSetUnionWith(anotherSet, EmptyFSet)
+    anotherSetUnionWith(anotherSet, this)
   }
-
-
-
 }

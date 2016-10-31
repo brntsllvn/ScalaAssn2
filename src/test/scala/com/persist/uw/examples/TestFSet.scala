@@ -157,12 +157,6 @@ class TestFSet extends mutable.Specification {
       (s2.subset(s1) mustEqual false)
   }
 
-  "intersect with empty" >> {
-    val s1 = FSet().add(1)
-    val interSet = EmptyFSet.intersect(s1)
-    interSet.equals(EmptyFSet) mustEqual true
-  }
-
   "intersect with same" >> {
     val s1 = FSet().add(1)
     val interSet = s1.intersect(s1)
@@ -216,5 +210,4 @@ class TestFSet extends mutable.Specification {
     val s = FSet().add(1).add(2).add(3).add(4)
     s1.union(s2).equals(s) mustEqual true
   }
-
 }

@@ -31,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestFSet.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestFSet.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/com/persist/uw/examples/TestFSet.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="212" column="10" selection-start-line="212" selection-start-column="10" selection-end-line="212" selection-end-column="10" />
+            <state relative-caret-position="161">
+              <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
               <folding>
                 <element signature="e#33#78#0" expanded="true" />
               </folding>
@@ -43,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FSet.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FSet.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/persist/uw/examples/FSet.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="134" column="33" selection-start-line="134" selection-start-column="33" selection-end-line="134" selection-end-column="33" />
+            <state relative-caret-position="492">
+              <caret line="114" column="3" selection-start-line="114" selection-start-column="3" selection-end-line="114" selection-end-column="3" />
               <folding>
                 <element signature="e#33#85#0" expanded="true" />
               </folding>
@@ -75,14 +75,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/com/persist/uw/examples/FSet.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/com/persist/uw/examples/TestFSet.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/persist/uw/examples/FSet.scala" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="7" />
-    <option name="y" value="44" />
+    <option name="x" value="9" />
+    <option name="y" value="40" />
     <option name="width" value="1260" />
     <option name="height" value="733" />
   </component>
@@ -115,52 +115,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Specs2.com.persist.uw.examples.TestFSet::union">
-    <configuration default="false" name="com.persist.uw.examples.TestFSet::union with empty set" type="Specs2RunConfiguration" factoryName="Specs2" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="assign2" />
-      <setting name="path" value="com.persist.uw.examples.TestFSet" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="union with empty set" />
-      <setting name="testKind" value="Test name" />
-      <setting name="showProgressMessages" value="true" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="com.persist.uw.examples.TestFSet::union with same set" type="Specs2RunConfiguration" factoryName="Specs2" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="assign2" />
-      <setting name="path" value="com.persist.uw.examples.TestFSet" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="union with same set" />
-      <setting name="testKind" value="Test name" />
-      <setting name="showProgressMessages" value="true" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="com.persist.uw.examples.TestFSet::union with subset" type="Specs2RunConfiguration" factoryName="Specs2" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="assign2" />
-      <setting name="path" value="com.persist.uw.examples.TestFSet" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="union with subset" />
-      <setting name="testKind" value="Test name" />
-      <setting name="showProgressMessages" value="true" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Specs2.TestFSet">
     <configuration default="false" name="com.persist.uw.examples.TestFSet::union with superset" type="Specs2RunConfiguration" factoryName="Specs2" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="assign2" />
@@ -186,6 +141,51 @@
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
       <setting name="searchForTest" value="Across module dependencies" />
       <setting name="testName" value="union" />
+      <setting name="testKind" value="Test name" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestFSet" type="Specs2RunConfiguration" factoryName="Specs2" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="assign2" />
+      <setting name="path" value="com.persist.uw.examples.TestFSet" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="com.persist.uw.examples.TestFSet::set is subset of itself" type="Specs2RunConfiguration" factoryName="Specs2" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="assign2" />
+      <setting name="path" value="com.persist.uw.examples.TestFSet" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="set is subset of itself" />
+      <setting name="testKind" value="Test name" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="com.persist.uw.examples.TestFSet::delete element buried inside" type="Specs2RunConfiguration" factoryName="Specs2" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="assign2" />
+      <setting name="path" value="com.persist.uw.examples.TestFSet" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="delete element buried inside" />
       <setting name="testKind" value="Test name" />
       <setting name="showProgressMessages" value="true" />
       <envs />
@@ -481,19 +481,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Specs2.com.persist.uw.examples.TestFSet::union with empty set" />
-      <item index="1" class="java.lang.String" itemvalue="Specs2.com.persist.uw.examples.TestFSet::union with same set" />
-      <item index="2" class="java.lang.String" itemvalue="Specs2.com.persist.uw.examples.TestFSet::union with subset" />
-      <item index="3" class="java.lang.String" itemvalue="Specs2.com.persist.uw.examples.TestFSet::union with superset" />
-      <item index="4" class="java.lang.String" itemvalue="Specs2.com.persist.uw.examples.TestFSet::union" />
+      <item index="0" class="java.lang.String" itemvalue="Specs2.com.persist.uw.examples.TestFSet::union with superset" />
+      <item index="1" class="java.lang.String" itemvalue="Specs2.com.persist.uw.examples.TestFSet::union" />
+      <item index="2" class="java.lang.String" itemvalue="Specs2.TestFSet" />
+      <item index="3" class="java.lang.String" itemvalue="Specs2.com.persist.uw.examples.TestFSet::set is subset of itself" />
+      <item index="4" class="java.lang.String" itemvalue="Specs2.com.persist.uw.examples.TestFSet::delete element buried inside" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Specs2.com.persist.uw.examples.TestFSet::union" />
-        <item index="1" class="java.lang.String" itemvalue="Specs2.com.persist.uw.examples.TestFSet::union with superset" />
-        <item index="2" class="java.lang.String" itemvalue="Specs2.com.persist.uw.examples.TestFSet::union with subset" />
-        <item index="3" class="java.lang.String" itemvalue="Specs2.com.persist.uw.examples.TestFSet::union with same set" />
-        <item index="4" class="java.lang.String" itemvalue="Specs2.com.persist.uw.examples.TestFSet::union with empty set" />
+        <item index="0" class="java.lang.String" itemvalue="Specs2.TestFSet" />
+        <item index="1" class="java.lang.String" itemvalue="Specs2.com.persist.uw.examples.TestFSet::delete element buried inside" />
+        <item index="2" class="java.lang.String" itemvalue="Specs2.com.persist.uw.examples.TestFSet::set is subset of itself" />
+        <item index="3" class="java.lang.String" itemvalue="Specs2.com.persist.uw.examples.TestFSet::union" />
+        <item index="4" class="java.lang.String" itemvalue="Specs2.com.persist.uw.examples.TestFSet::union with superset" />
       </list>
     </recent_temporary>
   </component>
@@ -547,39 +547,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="com_persist_uw_examples_TestFSet__union - 2016.10.30 at 19h 30m 18s.xml">
-      <configuration name="com.persist.uw.examples.TestFSet::union" configurationId="Specs2RunConfiguration" />
+    <history-entry file="TestFSet - 2016.10.30 at 20h 19m 10s.xml">
+      <configuration name="TestFSet" configurationId="Specs2RunConfiguration" />
     </history-entry>
-    <history-entry file="com_persist_uw_examples_TestFSet__union_with_empty_set - 2016.10.30 at 19h 15m 33s.xml">
-      <configuration name="com.persist.uw.examples.TestFSet::union with empty set" configurationId="Specs2RunConfiguration" />
+    <history-entry file="TestFSet - 2016.10.30 at 20h 19m 48s.xml">
+      <configuration name="TestFSet" configurationId="Specs2RunConfiguration" />
     </history-entry>
-    <history-entry file="com_persist_uw_examples_TestFSet__union_with_empty_set - 2016.10.30 at 19h 20m 29s.xml">
-      <configuration name="com.persist.uw.examples.TestFSet::union with empty set" configurationId="Specs2RunConfiguration" />
+    <history-entry file="TestFSet - 2016.10.30 at 20h 21m 39s.xml">
+      <configuration name="TestFSet" configurationId="Specs2RunConfiguration" />
     </history-entry>
-    <history-entry file="com_persist_uw_examples_TestFSet__union_with_same_set - 2016.10.30 at 19h 21m 27s.xml">
-      <configuration name="com.persist.uw.examples.TestFSet::union with same set" configurationId="Specs2RunConfiguration" />
+    <history-entry file="TestFSet - 2016.10.30 at 20h 26m 25s.xml">
+      <configuration name="TestFSet" configurationId="Specs2RunConfiguration" />
     </history-entry>
-    <history-entry file="com_persist_uw_examples_TestFSet__union_with_same_set - 2016.10.30 at 19h 22m 19s.xml">
-      <configuration name="com.persist.uw.examples.TestFSet::union with same set" configurationId="Specs2RunConfiguration" />
+    <history-entry file="TestFSet - 2016.10.30 at 20h 29m 02s.xml">
+      <configuration name="TestFSet" configurationId="Specs2RunConfiguration" />
     </history-entry>
-    <history-entry file="com_persist_uw_examples_TestFSet__union_with_subset - 2016.10.30 at 19h 23m 58s.xml">
-      <configuration name="com.persist.uw.examples.TestFSet::union with subset" configurationId="Specs2RunConfiguration" />
+    <history-entry file="TestFSet - 2016.10.30 at 20h 30m 09s.xml">
+      <configuration name="TestFSet" configurationId="Specs2RunConfiguration" />
     </history-entry>
-    <history-entry file="com_persist_uw_examples_TestFSet__union_with_superset - 2016.10.30 at 19h 25m 29s.xml">
-      <configuration name="com.persist.uw.examples.TestFSet::union with superset" configurationId="Specs2RunConfiguration" />
+    <history-entry file="com_persist_uw_examples_TestFSet__delete_element_buried_inside - 2016.10.30 at 20h 28m 39s.xml">
+      <configuration name="com.persist.uw.examples.TestFSet::delete element buried inside" configurationId="Specs2RunConfiguration" />
     </history-entry>
-    <history-entry file="com_persist_uw_examples_TestFSet__union_with_superset - 2016.10.30 at 19h 28m 10s.xml">
-      <configuration name="com.persist.uw.examples.TestFSet::union with superset" configurationId="Specs2RunConfiguration" />
+    <history-entry file="com_persist_uw_examples_TestFSet__delete_element_buried_inside - 2016.10.30 at 20h 28m 51s.xml">
+      <configuration name="com.persist.uw.examples.TestFSet::delete element buried inside" configurationId="Specs2RunConfiguration" />
     </history-entry>
-    <history-entry file="com_persist_uw_examples_TestFSet__union_with_superset - 2016.10.30 at 19h 29m 19s.xml">
-      <configuration name="com.persist.uw.examples.TestFSet::union with superset" configurationId="Specs2RunConfiguration" />
+    <history-entry file="com_persist_uw_examples_TestFSet__delete_element_buried_inside - 2016.10.30 at 20h 28m 54s.xml">
+      <configuration name="com.persist.uw.examples.TestFSet::delete element buried inside" configurationId="Specs2RunConfiguration" />
     </history-entry>
-    <history-entry file="com_persist_uw_examples_TestFSet__union_with_superset - 2016.10.30 at 19h 29m 51s.xml">
-      <configuration name="com.persist.uw.examples.TestFSet::union with superset" configurationId="Specs2RunConfiguration" />
+    <history-entry file="com_persist_uw_examples_TestFSet__set_is_subset_of_itself - 2016.10.30 at 20h 19m 09s.xml">
+      <configuration name="com.persist.uw.examples.TestFSet::set is subset of itself" configurationId="Specs2RunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="7" y="44" width="1260" height="733" extended-state="0" />
+    <frame x="9" y="40" width="1260" height="733" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -651,7 +651,21 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="18" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/test/scala/com/persist/uw/examples/TestFSet.scala</url>
+          <line>128</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/test/scala/com/persist/uw/examples/TestFSet.scala</url>
+          <line>75</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -846,22 +860,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/persist/uw/examples/FSet.scala">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/com/persist/uw/examples/TestFSet.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="134" column="33" selection-start-line="134" selection-start-column="33" selection-end-line="134" selection-end-column="33" />
+        <state relative-caret-position="161">
+          <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
           <folding>
-            <element signature="e#33#85#0" expanded="true" />
+            <element signature="e#33#78#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/com/persist/uw/examples/TestFSet.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/persist/uw/examples/FSet.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="212" column="10" selection-start-line="212" selection-start-column="10" selection-end-line="212" selection-end-column="10" />
+        <state relative-caret-position="492">
+          <caret line="114" column="3" selection-start-line="114" selection-start-column="3" selection-end-line="114" selection-end-column="3" />
           <folding>
-            <element signature="e#33#78#0" expanded="true" />
+            <element signature="e#33#85#0" expanded="true" />
           </folding>
         </state>
       </provider>
