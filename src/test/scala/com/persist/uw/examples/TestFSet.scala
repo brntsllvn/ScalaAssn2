@@ -183,12 +183,38 @@ class TestFSet extends mutable.Specification {
     val s = FSet().add(2).add(3)
     s1.intersect(s2).equals(s) mustEqual true
   }
-//
-//  "union" >> {
-//    val s1 = FSet().add(1).add(2).add(3)
-//    val s2 = FSet().add(4).add(3).add(2)
-//    val s = FSet().add(1).add(2).add(3).add(4)
-//    s1.union(s2).equals(s) mustEqual true
-//  }
+
+  "union with empty set" >> {
+    val s1 = FSet().add(1)
+    val union = s1.union(EmptyFSet)
+    union.equals(s1) mustEqual true
+  }
+
+  "union with same set" >> {
+    val s1 = FSet().add(1)
+    val union = s1.union(s1)
+    union.equals(s1) mustEqual true
+  }
+
+  "union with subset" >> {
+    val s1 = FSet().add(1)
+    val s2 = s1.add(2)
+    val union = s2.union(s1)
+    union.equals(s2) mustEqual true
+  }
+
+  "union with superset" >> {
+    val s1 = FSet().add(1).add(2)
+    val s2 = s1.delete(2)
+    val union = s2.union(s1)
+    union.equals(s1) mustEqual true
+  }
+
+  "union" >> {
+    val s1 = FSet().add(1).add(2).add(3)
+    val s2 = FSet().add(4).add(3).add(2)
+    val s = FSet().add(1).add(2).add(3).add(4)
+    s1.union(s2).equals(s) mustEqual true
+  }
 
 }

@@ -129,6 +129,16 @@ sealed trait FSet {
     intersectedWith(this, EmptyFSet)
   }
 
-  def union(set1: FSet): FSet = ???
+  def union(anotherSet: FSet): FSet = {
+      def anotherSetUnionWith(anotherSet: FSet, accum: FSet = this): FSet = {
+        anotherSet match {
+          case EmptyFSet => accum
+          case NonEmptyFSet(leadInt, next) => anotherSetUnionWith(next, accum.add(leadInt))
+        }
+      }
+    anotherSetUnionWith(anotherSet, EmptyFSet)
+  }
+
+
 
 }
